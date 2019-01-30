@@ -232,6 +232,7 @@ def main():
         trip_duration_stats(df)
         user_stats(df)
 
+        #Asks user for next steps: restart program, see raw data, or exit the program
         restart_or_data = input('\nWhat would you like to do next?\nPlease enter restart, see data, or exit\n')
         if restart_or_data.lower() == 'restart':
             continue
