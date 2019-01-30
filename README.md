@@ -25,10 +25,10 @@ Output includes:
 Note: Washington data file does not have information about gender or year of birth for users.
 
 ### Files used
-chicago.csv
-new_york_city.csv
-washington.csv
-bikeshare.py
+* chicago.csv
+* new_york_city.csv
+* washington.csv
+* bikeshare.py
 
 ### Credits
 Project concept and data through Udacity Programming for Data Science nanodegree program.
