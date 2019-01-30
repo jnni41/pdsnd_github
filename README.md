@@ -1,15 +1,34 @@
 ### Date created
-Include the date you created this project and README file.
+01/30/2019
 
 ### Project Title
-Replace the Project Title
+Bikeshare Project
 
 ### Description
-Describe what your project is about and what it does
+User has option to input one of three cities:
+* Chicago
+* New York City
+* Washington DC
+
+For each city, user has option to specify data filters by:
+* month
+* day of week
+* both
+* none
+
+Output includes:
+* Popular months, days, times
+* Popular stations and trips
+* Trip duration
+* User information
+
+Note: Washington data file does not have information about gender or year of birth for users.
 
 ### Files used
-Include the files used
+chicago.csv
+new_york_city.csv
+washington.csv
+bikeshare.py
 
 ### Credits
-It's important to give proper credit. Add links to any repo that inspired you or blogposts you consulted.
-
+Project concept and data through Udacity Programming for Data Science nanodegree program.
