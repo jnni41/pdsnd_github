@@ -164,22 +164,22 @@ def trip_duration_stats(df):
     total_travel_time = df['Trip Duration'].sum()
     mean_travel_time = df['Trip Duration'].mean()
 
-    def ddhhmmss(trip_stat,seconds):
+    def ddhhmmss(trip_stat,trip_time):
         """
         Converts seconds to days, hours, minutes and seconds using divmod
 
         Input:
-        trip_stats(str) describes what sort of travel time (max, min, average, etc) for descriptive output
-        seconds(float) calculated number of seconds
+        (str) trip_stats - describes what sort of travel time (max, min, average, etc) for descriptive output
+        (float) trip_time - calculated number of seconds
 
         Output:
         Prints statement with calculations of DDHHMMSS in sentence form
         """
-        days = divmod(seconds, 86400)
+        days = divmod(trip_time, 86400)
         hours = divmod(days[1], 3600)
         minutes = divmod(hours[1], 60)
 
-        print(trip_stat, "Travel Time: {} days, {} hours, {} minutes, {} seconds (or {} seconds)".format(days[0], hours[0], minutes[0], minutes[1], seconds))
+        print(trip_stat, "Travel Time: {} days, {} hours, {} minutes, {} seconds (or {} seconds)".format(days[0], hours[0], minutes[0], minutes[1], trip_time))
 
     ddhhmmss("Total",total_travel_time)
     ddhhmmss("Mean",mean_travel_time)
